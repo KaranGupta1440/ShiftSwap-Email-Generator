@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shift Swap</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Karan's Day Swap System</h2>
+        <form id="shiftSwapForm">
+            <div class="form-group">
+                <label for="date1">Date 1:</label>
+                <input type="date" id="date1" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="agent1Name1">Agent 1 Name:</label>
+                <input type="text" id="agent1Name1" list="agentNames" required oninput="populateAgentNames()">
+                <datalist id="agentNames">
+                    <option value="Princiya Dsouza">
+                    <option value="Pratiksha Poojary">
+                    <option value="Suma Shetty">
+                    <option value="Adarsh Thapa">
+                    <option value="Manisha Bangera">
+                    <option value="Yash Harsora">
+                    <option value="Karan Gupta">
+                    <option value="Gaurav Bantwal">
+                    <option value="Aslub Jahagirdar">
+                    <option value="Saurav Kumar">
+                    <option value="Nihar Bhayani">
+                    <option value="Jennifer Raja">
+                    <option value="Poornashree Nakshathri">
+                    <option value="Ashwin Avate">
+                    <option value="Darryl Dsouza">
+                    <option value="Sabila Khan">
+                    <option value="Mohammed Rehan Gandhi">
+                    <option value="Shabina Shaikh">
+                    <option value="Nivedita Patra">
+                    <option value="Gilchrist Lewis">
+                </datalist>
+            </div>
+            
+            <div class="form-group">
+                <label for="agent1Shift1">Agent 1 Shift:</label>
+                <input type="text" id="agent1Shift1" list="agentShiftOptions" required>
+                <datalist id="agentShiftOptions"></datalist>
+            </div>
+            
+            <div class="form-group">
+                <label for="agent2Name1">Agent 2 Name:</label>
+                <input type="text" id="agent2Name1" list="agentNames" required oninput="populateAgentNames()">
+            </div>
+            
+            <div class="form-group">
+                <label for="agent2Shift1">Agent 2 Shift:</label>
+                <input type="text" id="agent2Shift1" list="agentShiftOptions" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="date2">Date 2:</label>
+                <input type="date" id="date2" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="agent1Name2">Agent 1 Name:</label>
+                <input type="text" id="agent1Name2" list="agentNames" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="agent1Shift2">Agent 1 Shift:</label>
+                <input type="text" id="agent1Shift2" list="agentShiftOptions" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="agent2Name2">Agent 2 Name:</label>
+                <input type="text" id="agent2Name2" list="agentNames" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="agent2Shift2">Agent 2 Shift:</label>
+                <input type="text" id="agent2Shift2" list="agentShiftOptions" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="reason">Reason of Swap:</label>
+                <input type="text" id="reason" required>
+            </div>
+            
+            <button type="button" onclick="validateAndPerformSwap()">Perform Swap</button>
+        </form>
+        <hr>
+        <div id="output"></div>
+    </div>
+
+    <div class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+<div id="developed-by">
+    <p><i class="fas fa-user"></i> Developed by Karan Gupta</p>
+</div>
+</body>
+</html>
