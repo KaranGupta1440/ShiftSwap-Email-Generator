@@ -30,8 +30,6 @@ How to Use:
 5. The application will generate an email template with the shift swap details.
 6. Copy the generated email template and use it in your email client.
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 
 Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or create a pull request!
 
